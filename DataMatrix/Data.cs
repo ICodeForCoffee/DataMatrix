@@ -182,7 +182,7 @@ namespace DataMatrix
                 "Nguyen",
                 "Murphy",
                 "Rivera",
-                "Cook ",
+                "Cook",
                 "Rogers",
                 "Morgan",
                 "Peterson",
