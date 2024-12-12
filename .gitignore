@@ -4,3 +4,5 @@
 
 /.vs/DataMatrix
 /DataMatrix/DataMatrix.csproj
+/DataMatrix/obj
+/DataMatrix/bin/Debug/net9.0
