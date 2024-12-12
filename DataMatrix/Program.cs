@@ -22,6 +22,7 @@ while(true)
     System.Threading.Thread.Sleep(200);
 }
 
+//ToDo This random birthday is absolutely not random.
 DateOnly GetRandomBirthday()
 {
     DateOnly someDate = new DateOnly();
