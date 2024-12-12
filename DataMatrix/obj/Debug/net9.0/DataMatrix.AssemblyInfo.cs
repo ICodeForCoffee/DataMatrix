@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataMatrix")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe8dd4a3b5a977cd49f20863a276ef83868fa6f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+213c48ad8408650b4b11ca5ebe51722b793985c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataMatrix")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataMatrix")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

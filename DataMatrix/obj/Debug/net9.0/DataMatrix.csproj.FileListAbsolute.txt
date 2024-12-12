@@ -1,0 +1,15 @@
+c:\Git\DataMatrix\DataMatrix\bin\Debug\net9.0\DataMatrix.exe
+c:\Git\DataMatrix\DataMatrix\bin\Debug\net9.0\DataMatrix.deps.json
+c:\Git\DataMatrix\DataMatrix\bin\Debug\net9.0\DataMatrix.runtimeconfig.json
+c:\Git\DataMatrix\DataMatrix\bin\Debug\net9.0\DataMatrix.dll
+c:\Git\DataMatrix\DataMatrix\bin\Debug\net9.0\DataMatrix.pdb
+c:\Git\DataMatrix\DataMatrix\obj\Debug\net9.0\DataMatrix.GeneratedMSBuildEditorConfig.editorconfig
+c:\Git\DataMatrix\DataMatrix\obj\Debug\net9.0\DataMatrix.AssemblyInfoInputs.cache
+c:\Git\DataMatrix\DataMatrix\obj\Debug\net9.0\DataMatrix.AssemblyInfo.cs
+c:\Git\DataMatrix\DataMatrix\obj\Debug\net9.0\DataMatrix.csproj.CoreCompileInputs.cache
+c:\Git\DataMatrix\DataMatrix\obj\Debug\net9.0\DataMatrix.sourcelink.json
+c:\Git\DataMatrix\DataMatrix\obj\Debug\net9.0\DataMatrix.dll
+c:\Git\DataMatrix\DataMatrix\obj\Debug\net9.0\refint\DataMatrix.dll
+c:\Git\DataMatrix\DataMatrix\obj\Debug\net9.0\DataMatrix.pdb
+c:\Git\DataMatrix\DataMatrix\obj\Debug\net9.0\DataMatrix.genruntimeconfig.cache
+c:\Git\DataMatrix\DataMatrix\obj\Debug\net9.0\ref\DataMatrix.dll
