@@ -14,11 +14,22 @@ Random random = new Random();
 while(true)
 {
     var key = random.Next(99999);
-    var firstName = dataCache.FirstNameList[random.Next(dataCache.FirstNameList.Count)];
+    var firstName = "";
+    var gender = "";
+    if (random.Next(2) == 0)
+    {
+        firstName = dataCache.FirstNameMaleList[random.Next(dataCache.FirstNameMaleList.Count)];
+        gender = "Male";
+    }
+    else
+    {
+        firstName = dataCache.FirstNameFemaleList[random.Next(dataCache.FirstNameFemaleList.Count)];
+        gender = "Female";
+    }
     var lastName = dataCache.LastNameList[random.Next(dataCache.LastNameList.Count)];
     var date1 = GetRandomBirthday();
     var guid = Guid.NewGuid();
-    Console.WriteLine($"{key}|{firstName}|{lastName}|{date1}|{guid}");
+    Console.WriteLine($"{key}|{firstName}|{lastName}|{gender}|{date1}|{guid}");
     System.Threading.Thread.Sleep(200);
 }
 
