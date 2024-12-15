@@ -6,3 +6,5 @@
 /DataMatrix/DataMatrix.csproj
 /DataMatrix/obj
 /DataMatrix/bin/Debug/net9.0
+/DataMatrix.Test/bin/Debug/net9.0
+/DataMatrix.Test/obj
