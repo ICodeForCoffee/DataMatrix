@@ -10,6 +10,7 @@ System.Threading.Thread.Sleep(2000);
 
 Data dataCache = new Data();
 Random random = new Random();
+BirthdayHelper birthdayHelper = new BirthdayHelper();
 
 while(true)
 {
@@ -27,16 +28,9 @@ while(true)
         gender = "Female";
     }
     var lastName = dataCache.LastNameList[random.Next(dataCache.LastNameList.Count)];
-    var date1 = GetRandomBirthday();
+    var date1 = birthdayHelper.GetRandomBirthdayForAdult();
     var guid = Guid.NewGuid();
     Console.WriteLine($"{key}|{firstName}|{lastName}|{gender}|{date1}|{guid}");
     System.Threading.Thread.Sleep(200);
 }
 
-//ToDo This random birthday is absolutely not random.
-DateOnly GetRandomBirthday()
-{
-    DateOnly someDate = new DateOnly();
-    someDate = DateOnly.FromDateTime(DateTime.Now);
-    return someDate;
-}
