@@ -16,7 +16,12 @@ namespace DataMatrix
             int yearOffset = random.Next(84);
             int birthYear = DateTime.Now.Year - yearOffset - 18;
             int dayOffset = 0;
-            if (IsLeapYear(birthYear))
+            if (birthYear + 18 == DateTime.Now.Year)
+            {
+                //This will cluster the dates to the part of the year that has already occured. I could shift this around if I redid the generation.
+                dayOffset = random.Next(DateTime.Now.DayOfYear);
+            }
+            else if (IsLeapYear(birthYear))
             {
                 dayOffset = random.Next(366);
             }
