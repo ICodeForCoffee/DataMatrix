@@ -31,7 +31,7 @@ namespace DataMatrix.Test
         }
 
         [Fact]
-        public void MilleniumIsLeapYear()
+        public void SecondMilleniumIsLeapYear()
         {
             BirthdayHelper birthdayHelper = new BirthdayHelper();
             Assert.True(birthdayHelper.IsLeapYear(2000));
@@ -41,7 +41,7 @@ namespace DataMatrix.Test
         public void YearsDividedBy400AreLeapYears()
         {
             BirthdayHelper birthdayHelper = new BirthdayHelper();
-            Assert.True(birthdayHelper.IsLeapYear(2000));
+            Assert.True(birthdayHelper.IsLeapYear(2800));
             Assert.True(birthdayHelper.IsLeapYear(1600));
             Assert.True(birthdayHelper.IsLeapYear(2400));
             Assert.True(birthdayHelper.IsLeapYear(400));
@@ -54,6 +54,8 @@ namespace DataMatrix.Test
             Assert.False(birthdayHelper.IsLeapYear(1900));
             Assert.False(birthdayHelper.IsLeapYear(1700));
             Assert.False(birthdayHelper.IsLeapYear(2100));
+            Assert.False(birthdayHelper.IsLeapYear(2700));
+            Assert.False(birthdayHelper.IsLeapYear(300));
 
         }
     }
