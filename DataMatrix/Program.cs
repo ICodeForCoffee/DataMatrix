@@ -7,30 +7,18 @@ Console.WriteLine("Welcome to DataMatrix!");
 Console.WriteLine("Loading your data!");
 System.Threading.Thread.Sleep(2000);
 
-
+//These are depdencies...
 Data dataCache = new Data();
 Random random = new Random();
-BirthdayHelper birthdayHelper = new BirthdayHelper();
+
+PersonHelper personHelper = new PersonHelper(dataCache);
 
 while(true)
 {
-    var key = random.Next(99999);
-    var firstName = "";
-    var gender = "";
-    if (random.Next(2) == 0)
-    {
-        firstName = dataCache.FirstNameMaleList[random.Next(dataCache.FirstNameMaleList.Count)];
-        gender = "Male";
-    }
-    else
-    {
-        firstName = dataCache.FirstNameFemaleList[random.Next(dataCache.FirstNameFemaleList.Count)];
-        gender = "Female";
-    }
-    var lastName = dataCache.LastNameList[random.Next(dataCache.LastNameList.Count)];
-    var date1 = birthdayHelper.GetRandomBirthdayForAdult();
+    var newPersaon = personHelper.GetRandomPerson();
+    
     var guid = Guid.NewGuid();
-    Console.WriteLine($"{key}|{firstName}|{lastName}|{gender}|{date1}|{guid}");
+    Console.WriteLine($"{newPersaon.Id}|{newPersaon.FirstName}|{newPersaon.LastName}|{newPersaon.Gender}|{newPersaon.Birthday}|{guid}");
     System.Threading.Thread.Sleep(200);
 }
 
