@@ -9,7 +9,7 @@ namespace DataMatrix.Test
     public class BirthdayHelperTests
     {
         [Fact]
-        public void IsAdult()
+        public void GetRandomBirthdayIsAdult()
         {
             var birthdayHelper = new BirthdayHelper();
 
@@ -39,7 +39,7 @@ namespace DataMatrix.Test
         }
 
         [Fact]
-        public void DoesNotExceedHumanLifespan()
+        public void GetRandomBirthdayDoesNotExceedHumanLifespan()
         {
             //Oldest person in existance lived to 122. Assuming science advances, let's say 125 is the maximium age we can get.
             var birthdayHelper = new BirthdayHelper();
