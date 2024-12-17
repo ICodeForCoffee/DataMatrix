@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataMatrix.Test
 {
-    public class GetRandomBirthdayTests
+    public class BirthdayHelperTests
     {
         [Fact]
         public void IsAdult()
