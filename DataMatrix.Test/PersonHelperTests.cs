@@ -14,7 +14,7 @@ namespace DataMatrix.Test
             Assert.NotEmpty(newPerson.FirstName);
             Assert.NotEmpty(newPerson.LastName);
             Assert.InRange(newPerson.Id, 1, Int32.MaxValue);
-            Assert.NotEmpty(newPerson.Gender);
+            Assert.IsType<Gender>(newPerson.Gender);
             Assert.NotEmpty(newPerson.Birthday.ToString());
         }
     }

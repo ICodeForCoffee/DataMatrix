@@ -17,21 +17,21 @@ namespace DataMatrix
             var random = new Random();
             var key = random.Next(99999);
             var firstName = "";
-            var gender = "";
+            Gender? gender = null;
             if (random.Next(2) == 0)
             {
                 firstName = DataCache.FirstNameMaleList[random.Next(DataCache.FirstNameMaleList.Count)];
-                gender = "Male";
+                gender = Gender.Male;
             }
             else
             {
                 firstName = DataCache.FirstNameFemaleList[random.Next(DataCache.FirstNameFemaleList.Count)];
-                gender = "Female";
+                gender = Gender.Female;
             }
             var lastName = DataCache.LastNameList[random.Next(DataCache.LastNameList.Count)];
             var birthday = birthdayHelper.GetRandomBirthdayForAdult();
 
-            return new Person(key, gender, firstName, lastName, birthday);
+            return new Person(key, (Gender)gender, firstName, lastName, birthday);
         }
     }
 }
