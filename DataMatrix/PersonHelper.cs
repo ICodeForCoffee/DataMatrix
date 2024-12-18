@@ -16,7 +16,7 @@ namespace DataMatrix
         {
             BirthdayHelper birthdayHelper = new BirthdayHelper();
             var random = new Random();
-            var key = random.Next(99999);
+            var key = random.Next(100000);
             var firstName = "";
             Gender? gender = null;
             if (random.Next(2) == 0)
