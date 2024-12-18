@@ -30,6 +30,7 @@ namespace DataMatrix
                 gender = Gender.Female;
             }
 
+            //5% of the time, get a hyphenated last name, otherwise just get a random last name.
             string lastName = (random.Next(21)) switch
             {
                 20 => GetHyphenatedLastName(),

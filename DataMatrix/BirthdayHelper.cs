@@ -19,7 +19,7 @@ namespace DataMatrix
             if (birthYear + 18 == DateTime.Now.Year)
             {
                 //This will cluster the dates to the part of the year that has already occured. I could shift this around if I redid the generation.
-                dayOffset = random.Next(DateTime.Now.DayOfYear);
+                dayOffset = random.Next(DateTime.Now.DayOfYear) - 1;
             }
             else if (IsLeapYear(birthYear))
             {

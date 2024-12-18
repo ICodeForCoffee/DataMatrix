@@ -52,7 +52,7 @@ namespace DataMatrix.Test
 
                 var daysSinceBirthday = today.DayNumber - birthday.DayNumber;
                 bool doesNotExceedHumanLifespan = false;
-                //Check to make sure over 18 years have passed
+                //Check to make sure the person isn't over 102
                 if (daysSinceBirthday <= 37256)
                 {
                     doesNotExceedHumanLifespan = true;
