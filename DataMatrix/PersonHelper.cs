@@ -1,4 +1,5 @@
 using DataMatrix.Model;
+using System;
 
 namespace DataMatrix
 {
@@ -28,10 +29,28 @@ namespace DataMatrix
                 firstName = DataCache.FirstNameFemaleList[random.Next(DataCache.FirstNameFemaleList.Count)];
                 gender = Gender.Female;
             }
-            var lastName = DataCache.LastNameList[random.Next(DataCache.LastNameList.Count)];
+
+            string lastName = (random.Next(21)) switch
+            {
+                20 => GetHyphenatedLastName(),
+                _ => DataCache.LastNameList[random.Next(DataCache.LastNameList.Count)]
+            };
+
             var birthday = birthdayHelper.GetRandomBirthdayForAdult();
 
             return new Person(key, (Gender)gender, firstName, lastName, birthday);
+        }
+
+        public string GetHyphenatedLastName()
+        {
+            var random = new Random();
+            var name1 = DataCache.LastNameList[random.Next(DataCache.FirstNameFemaleList.Count)];
+            var name2 = name1;
+            while (name1 == name2) {
+                name2 = DataCache.LastNameList[random.Next(DataCache.FirstNameFemaleList.Count)];
+            }
+
+            return $"{name1}-{name2}";
         }
     }
 }

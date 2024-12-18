@@ -17,5 +17,28 @@ namespace DataMatrix.Test
             Assert.IsType<Gender>(newPerson.Gender);
             Assert.NotEmpty(newPerson.Birthday.ToString());
         }
+
+        [Fact]
+        public void GetHyphenatedLastNameMustHaveHyphen()
+        {
+            var personHelper = new PersonHelper(new Data());
+            var lastName = personHelper.GetHyphenatedLastName();
+
+            Assert.Contains("-", lastName);
+        }
+
+        [Fact]
+        public void GetHyphenatedLastNameMustBeTwoSeperateNames()
+        {
+            var personHelper = new PersonHelper(new Data());
+            var lastname = personHelper.GetHyphenatedLastName();
+
+            var nameParts = lastname.Split('-');
+            Assert.NotEmpty(nameParts);
+            Assert.Equal(2, nameParts.Length);
+            Assert.NotEmpty(nameParts[0]);
+            Assert.NotEmpty(nameParts[1]);
+            Assert.NotEqual(nameParts[0], nameParts[1]);
+        }
     }
 }
