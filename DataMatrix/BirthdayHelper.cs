@@ -38,7 +38,7 @@ namespace DataMatrix
 
         public bool IsLeapYear(int year)
         {
-            var isLeapYer = (year) switch
+            var isLeapYear = (year) switch
             {
                 var x when x % 400 == 0 => true,
                 var y when y % 100 == 0 => false,
@@ -46,7 +46,7 @@ namespace DataMatrix
                 _ => false,
             };
 
-            return isLeapYer;
+            return isLeapYear;
         }
     }
 }
