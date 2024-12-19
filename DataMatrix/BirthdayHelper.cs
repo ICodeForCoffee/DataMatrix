@@ -41,8 +41,8 @@ namespace DataMatrix
             var isLeapYer = (year) switch
             {
                 var x when x % 400 == 0 => true,
-                var x when x % 100 == 0 => false,
-                var x when x % 4 == 0 => true,
+                var y when y % 100 == 0 => false,
+                var z when z % 4 == 0 => true,
                 _ => false,
             };
 
