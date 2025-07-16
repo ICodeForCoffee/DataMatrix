@@ -45,10 +45,10 @@ namespace DataMatrix
         public string GetHyphenatedLastName()
         {
             var random = new Random();
-            var name1 = DataCache.LastNameList[random.Next(DataCache.FirstNameFemaleList.Count)];
+            var name1 = DataCache.LastNameList[random.Next(DataCache.LastNameList.Count)];
             var name2 = name1;
             while (name1 == name2) {
-                name2 = DataCache.LastNameList[random.Next(DataCache.FirstNameFemaleList.Count)];
+                name2 = DataCache.LastNameList[random.Next(DataCache.LastNameList.Count)];
             }
 
             return $"{name1}-{name2}";
