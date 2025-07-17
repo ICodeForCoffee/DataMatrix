@@ -1,5 +1,3 @@
-using DataMatrix;
-
 namespace DataMatrix.Test
 {
     public class PersonHelperTests

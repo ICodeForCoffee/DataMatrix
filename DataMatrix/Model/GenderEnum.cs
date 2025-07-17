@@ -1,6 +1,9 @@
-public enum Gender
+namespace DataMatrix
 {
-    Male,
-    Female,
-    Unknown
+    public enum Gender
+    {
+        Male,
+        Female,
+        Unknown
+    }
 }
