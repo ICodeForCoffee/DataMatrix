@@ -11,3 +11,5 @@
 /.vs/ProjectEvaluation
 /DataMatrix/bin/Release/net9.0
 /DataMatrix.Test/bin/Release/net9.0
+/DataMatrix/bin/Debug/net10.0
+/DataMatrix.Test/bin/Debug/net10.0
